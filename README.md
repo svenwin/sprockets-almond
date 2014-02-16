@@ -2,7 +2,7 @@ This library adds AMD (via Almond) support to [Sprockets](https://github.com/sst
 
 ## What is AMD?
 
-The AMD format is a way of encapsulating JavaScript libraries, ensuring they have to explicitly require and export properties they use.
+The AMD format is a way of encapsulating JavaScript libraries, ensuring they have to explicitly define their dependencies.
 
 ## This library
 
@@ -17,6 +17,8 @@ Sprockets will then postprocess your JS and insert the correct logical asset nam
 ```
 define("tickets/controller", ["backbone"], function(BB) {});
 ```
+
+This is just syntactic sugar on top of the goodness that AMD already provides through Almond.
 
 ## Usage
 
